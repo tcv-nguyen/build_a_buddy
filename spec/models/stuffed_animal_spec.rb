@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe StuffedAnimal, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject { create(:stuffed_animal) }
+  
+  it { should validate_presence_of(:name) }
 end
