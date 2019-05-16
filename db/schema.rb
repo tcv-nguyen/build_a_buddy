@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_16_232600) do
+ActiveRecord::Schema.define(version: 2019_05_16_233028) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accessories", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "size", null: false
+    t.decimal "cost", default: "0.0"
+    t.decimal "sale_price", default: "0.0"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name", "size"], name: "index_accessories_on_name_and_size", unique: true
+  end
 
   create_table "stuffed_animals", force: :cascade do |t|
     t.string "name", null: false
