@@ -7,3 +7,4 @@ Build a Buddy is a toy store that provides customers with a fun and creative way
 # Notice:
 
 - For demo purpose, the project is ready for development environment only. For production environment, it would require extra settings.
+- For demo purpose, I add `cost` and `sale_price` into the StuffedAnimal and Accessory tables. In production mode, where there are a lot of different products and variants, I would break the `cost` and `sale_price` into Money object.
