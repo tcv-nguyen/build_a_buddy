@@ -6,6 +6,7 @@ RSpec.describe CustomProduct, type: :model do
   let(:custom_product) { subject }
   let(:stuffed_animal) { custom_product.stuffed_animal }
 
+  it { should have_many(:product_accessories) }
   it { should belong_to(:order) }
   it { should belong_to(:stuffed_animal) }
 
