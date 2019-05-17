@@ -5,5 +5,6 @@ RSpec.describe StuffedAnimal, type: :model do
   
   it { should have_many(:accessory_compatibilities) }
   it { should have_many(:accessories) }
+  it { should have_many(:custom_products) }
   it { should validate_presence_of(:name) }
 end
