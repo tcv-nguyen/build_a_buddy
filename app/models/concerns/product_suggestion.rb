@@ -1,7 +1,4 @@
 class ProductSuggestion
-  def initialize
-  end
-
   def other_also_bought(products_set_ids = [])
     # Generate a list in case User already picked the suggest product, so we can suggest another
     suggestion_ids = []
@@ -43,7 +40,7 @@ class ProductSuggestion
       end
     end
     return nil if suggestion_products.blank?
-    
+
     # If there are multiple products with same profit, sort by least sale_price for advertising
     best_products = suggestion_products.sort_by { |sp| [sp.profit, -sp.sale_price] }.reverse.slice(0, 3)
   end
