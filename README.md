@@ -11,5 +11,5 @@ Build a Buddy is a toy store that provides customers with a fun and creative way
 - For demo purpose, I add `quantity` into table StuffedAnimal and Accessory. In reality, I should create model Inventory separately because of normalization and client could have multiple warehouses, plus other Inventory's attributes.
 - I'll create association:
   - Order has_many CustomProduct
-  - CustomProduct has_one StuffedAnimal, has_many Accessories
+  - CustomProduct belongs_to StuffedAnimal, has_many Accessories through ProductAccessory. ProductAccessory will have Accessory sale_price at the time of adding to cart.
   - This association will allow normalization of Order with multiple CustomProducts, allow developer easy to code on front end for User's seletion, allow simple controller add/remove CustomProduct, allow simple calculation of CustomProduct's price (sum :quantity)
