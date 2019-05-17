@@ -7,8 +7,10 @@ FactoryBot.define do
       product_count { 1 }
     end
 
-    after(:create) do |order, evaluator|
-      create_list(:custom_product, evaluator.product_count, order_id: order.id)
+    trait :with_custom_product do
+      after(:create) do |order, evaluator|
+        create_list(:custom_product, evaluator.product_count, order_id: order.id)
+      end
     end
   end
 end
