@@ -1,5 +1,6 @@
 Start: 18:16 Central Time
 Extracting data: 20:19 Central Time
+Taking break: 21:56 Central Time
 
 # About the project:
 
