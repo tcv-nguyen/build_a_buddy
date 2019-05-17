@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_17_000203) do
+ActiveRecord::Schema.define(version: 2019_05_17_000757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,18 @@ ActiveRecord::Schema.define(version: 2019_05_17_000203) do
     t.decimal "sale_price", default: "0.0"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "quantity", default: 0
     t.index ["name", "size"], name: "index_accessories_on_name_and_size", unique: true
+  end
+
+  create_table "accessory_compatibilities", force: :cascade do |t|
+    t.integer "stuffed_animal_id"
+    t.integer "accessory_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["accessory_id"], name: "index_accessory_compatibilities_on_accessory_id"
+    t.index ["stuffed_animal_id", "accessory_id"], name: "stuffed_animal_accessory_index", unique: true
+    t.index ["stuffed_animal_id"], name: "index_accessory_compatibilities_on_stuffed_animal_id"
   end
 
   create_table "stuffed_animals", force: :cascade do |t|
