@@ -1,6 +1,7 @@
-Start: 18:16 Central Time
-Extracting data: 20:19 Central Time
-Taking break: 21:56 Central Time
+Start: 05/16/2019 6:16 PM Central Time
+Extracting data: 05/16/2019 8:19 PM Central Time
+Taking break: 05/16/2019 9:56 PM Central Time
+Resume: 05/17/2019 8:40 AM Central Time
 
 # About the project:
 
