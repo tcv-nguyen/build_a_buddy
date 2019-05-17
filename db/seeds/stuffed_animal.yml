@@ -1,0 +1,19 @@
+- name: Bear
+  quantity: 215
+  cost: 3.21
+  sale_price: 29.99
+
+- name: Elephant
+  quantity: 345
+  cost: 4.08
+  sale_price: 29.99
+
+- name: Tiger
+  quantity: 321
+  cost: 3.78
+  sale_price: 29.99
+
+- name: Gorilla
+  quantity: 78
+  cost: 3.94
+  sale_price: 29.99

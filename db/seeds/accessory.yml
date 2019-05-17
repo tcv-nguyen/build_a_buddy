@@ -1,0 +1,47 @@
+- name: Shoes
+  size: small
+  cost: 2.45
+  sale_price: 12.99
+  quantity: 113
+
+- name: Shoes
+  size: medium
+  cost: 2.51
+  sale_price: 13.99
+  quantity: 145
+
+- name: Shoes
+  size: large
+  cost: 2.67
+  sale_price: 14.99
+  quantity: 84
+
+- name: T-Shirt
+  size: small
+  cost: 1.28
+  sale_price: 7.99
+  quantity: 215
+
+- name: T-Shirt
+  size: medium
+  cost: 1.31
+  sale_price: 8.99
+  quantity: 175
+
+- name: T-Shirt
+  size: large
+  cost: 1.35
+  sale_price: 9.99
+  quantity: 123
+
+- name: Tiara
+  size: All
+  cost: 0.78
+  sale_price: 7.99
+  quantity: 28
+
+- name: Glasses
+  size: All
+  cost: 0.53
+  sale_price: 6.99
+  quantity: 52
