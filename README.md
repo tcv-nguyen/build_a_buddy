@@ -1,4 +1,5 @@
 Start: 18:16 Central Time
+Extracting data: 20:19 Central Time
 
 # About the project:
 
